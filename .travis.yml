@@ -1,8 +1,9 @@
 language: swift
 xcode_project: GutenbergSem.xcodeproj
 xcode_scheme: GutenbergSem
+xcode_sdk: iphonesimulator10.0
 
 podfile: ./Podfile
 
 script:
-  - ./bin/tests
+- xcodebuild clean build test -project GutenbergSem.xcodeproj -scheme GutenbergSem
