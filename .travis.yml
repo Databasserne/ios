@@ -4,7 +4,5 @@ xcode_scheme: GutenbergSem
 osx_image: xcode8.3
 xcode_sdk: iphonesimulator10.0
 
-podfile: ./Podfile
-
 script:
-- xcodebuild clean build test -project GutenbergSem.xcodeproj -scheme GutenbergSem -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0'
+- xcodebuild clean build test -project GutenbergSem.xcodeproj -scheme GutenbergSem -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3'

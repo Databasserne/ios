@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "11D7E2E81EC2F6B600121FCF"
-               BuildableName = "GutenbergSem.app"
-               BlueprintName = "GutenbergSem"
-               ReferencedContainer = "container:GutenbergSem.xcodeproj">
+               BlueprintIdentifier = "6201363BE695A91B78AFDC7BB8DA8F8B"
+               BuildableName = "Pods_GutenbergSem.framework"
+               BlueprintName = "Pods-GutenbergSem"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6201363BE695A91B78AFDC7BB8DA8F8B"
-               BuildableName = "Pods_GutenbergSem.framework"
-               BlueprintName = "Pods-GutenbergSem"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+               BlueprintIdentifier = "11D7E2E81EC2F6B600121FCF"
+               BuildableName = "GutenbergSem.app"
+               BlueprintName = "GutenbergSem"
+               ReferencedContainer = "container:GutenbergSem.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
