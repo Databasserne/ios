@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		113804241EC30AF300FAFFBC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113804231EC30AF300FAFFBC /* MapKit.framework */; };
+		1138042C1EC3152E00FAFFBC /* GutenbergSemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138042B1EC3152E00FAFFBC /* GutenbergSemTests.swift */; };
+		1138043A1EC315BD00FAFFBC /* GutenbergSemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113804391EC315BD00FAFFBC /* GutenbergSemUITests.swift */; };
 		11B8185D1EC30AA700A09F07 /* Pods_GutenbergSem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9B6EC22B6CF4738166EF8C /* Pods_GutenbergSem.framework */; };
 		11D7E2ED1EC2F6B600121FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7E2EC1EC2F6B600121FCF /* AppDelegate.swift */; };
 		11D7E2EF1EC2F6B600121FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7E2EE1EC2F6B600121FCF /* ViewController.swift */; };
@@ -16,8 +18,31 @@
 		11D7E2F71EC2F6B600121FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F51EC2F6B600121FCF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1138042E1EC3152E00FAFFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11D7E2E11EC2F6B600121FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11D7E2E81EC2F6B600121FCF;
+			remoteInfo = GutenbergSem;
+		};
+		1138043C1EC315BD00FAFFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11D7E2E11EC2F6B600121FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11D7E2E81EC2F6B600121FCF;
+			remoteInfo = GutenbergSem;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		113804231EC30AF300FAFFBC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		113804291EC3152E00FAFFBC /* GutenbergSemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GutenbergSemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1138042B1EC3152E00FAFFBC /* GutenbergSemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutenbergSemTests.swift; sourceTree = "<group>"; };
+		1138042D1EC3152E00FAFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113804371EC315BD00FAFFBC /* GutenbergSemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GutenbergSemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		113804391EC315BD00FAFFBC /* GutenbergSemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutenbergSemUITests.swift; sourceTree = "<group>"; };
+		1138043B1EC315BD00FAFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D7E2E91EC2F6B600121FCF /* GutenbergSem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GutenbergSem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D7E2EC1EC2F6B600121FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D7E2EE1EC2F6B600121FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +56,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		113804261EC3152E00FAFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113804341EC315BD00FAFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11D7E2E61EC2F6B600121FCF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +82,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1138042A1EC3152E00FAFFBC /* GutenbergSemTests */ = {
+			isa = PBXGroup;
+			children = (
+				1138042B1EC3152E00FAFFBC /* GutenbergSemTests.swift */,
+				1138042D1EC3152E00FAFFBC /* Info.plist */,
+			);
+			path = GutenbergSemTests;
+			sourceTree = "<group>";
+		};
+		113804381EC315BD00FAFFBC /* GutenbergSemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				113804391EC315BD00FAFFBC /* GutenbergSemUITests.swift */,
+				1138043B1EC315BD00FAFFBC /* Info.plist */,
+			);
+			path = GutenbergSemUITests;
+			sourceTree = "<group>";
+		};
 		11D7E2E01EC2F6B600121FCF = {
 			isa = PBXGroup;
 			children = (
 				11D7E2EB1EC2F6B600121FCF /* GutenbergSem */,
+				1138042A1EC3152E00FAFFBC /* GutenbergSemTests */,
+				113804381EC315BD00FAFFBC /* GutenbergSemUITests */,
 				11D7E2EA1EC2F6B600121FCF /* Products */,
 				D7CC61ABE7AB2891FE9E9F91 /* Pods */,
 				A47BF6EF74C979E30882C910 /* Frameworks */,
@@ -57,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				11D7E2E91EC2F6B600121FCF /* GutenbergSem.app */,
+				113804291EC3152E00FAFFBC /* GutenbergSemTests.xctest */,
+				113804371EC315BD00FAFFBC /* GutenbergSemUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +156,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		113804281EC3152E00FAFFBC /* GutenbergSemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 113804301EC3152E00FAFFBC /* Build configuration list for PBXNativeTarget "GutenbergSemTests" */;
+			buildPhases = (
+				113804251EC3152E00FAFFBC /* Sources */,
+				113804261EC3152E00FAFFBC /* Frameworks */,
+				113804271EC3152E00FAFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1138042F1EC3152E00FAFFBC /* PBXTargetDependency */,
+			);
+			name = GutenbergSemTests;
+			productName = GutenbergSemTests;
+			productReference = 113804291EC3152E00FAFFBC /* GutenbergSemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		113804361EC315BD00FAFFBC /* GutenbergSemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1138043E1EC315BD00FAFFBC /* Build configuration list for PBXNativeTarget "GutenbergSemUITests" */;
+			buildPhases = (
+				113804331EC315BD00FAFFBC /* Sources */,
+				113804341EC315BD00FAFFBC /* Frameworks */,
+				113804351EC315BD00FAFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1138043D1EC315BD00FAFFBC /* PBXTargetDependency */,
+			);
+			name = GutenbergSemUITests;
+			productName = GutenbergSemUITests;
+			productReference = 113804371EC315BD00FAFFBC /* GutenbergSemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		11D7E2E81EC2F6B600121FCF /* GutenbergSem */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11D7E2FB1EC2F6B600121FCF /* Build configuration list for PBXNativeTarget "GutenbergSem" */;
@@ -125,6 +222,16 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Databasserne;
 				TargetAttributes = {
+					113804281EC3152E00FAFFBC = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11D7E2E81EC2F6B600121FCF;
+					};
+					113804361EC315BD00FAFFBC = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11D7E2E81EC2F6B600121FCF;
+					};
 					11D7E2E81EC2F6B600121FCF = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = W38H733M9Q;
@@ -151,11 +258,27 @@
 			projectRoot = "";
 			targets = (
 				11D7E2E81EC2F6B600121FCF /* GutenbergSem */,
+				113804281EC3152E00FAFFBC /* GutenbergSemTests */,
+				113804361EC315BD00FAFFBC /* GutenbergSemUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		113804271EC3152E00FAFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113804351EC315BD00FAFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11D7E2E71EC2F6B600121FCF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +340,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		113804251EC3152E00FAFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1138042C1EC3152E00FAFFBC /* GutenbergSemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113804331EC315BD00FAFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1138043A1EC315BD00FAFFBC /* GutenbergSemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11D7E2E51EC2F6B600121FCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +366,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1138042F1EC3152E00FAFFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11D7E2E81EC2F6B600121FCF /* GutenbergSem */;
+			targetProxy = 1138042E1EC3152E00FAFFBC /* PBXContainerItemProxy */;
+		};
+		1138043D1EC315BD00FAFFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11D7E2E81EC2F6B600121FCF /* GutenbergSem */;
+			targetProxy = 1138043C1EC315BD00FAFFBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		11D7E2F01EC2F6B600121FCF /* Main.storyboard */ = {
@@ -248,6 +400,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		113804311EC3152E00FAFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GutenbergSemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = databasserne.GutenbergSemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GutenbergSem.app/GutenbergSem";
+			};
+			name = Debug;
+		};
+		113804321EC3152E00FAFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GutenbergSemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = databasserne.GutenbergSemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GutenbergSem.app/GutenbergSem";
+			};
+			name = Release;
+		};
+		1138043F1EC315BD00FAFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GutenbergSemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = databasserne.GutenbergSemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GutenbergSem;
+			};
+			name = Debug;
+		};
+		113804401EC315BD00FAFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GutenbergSemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = databasserne.GutenbergSemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GutenbergSem;
+			};
+			name = Release;
+		};
 		11D7E2F91EC2F6B600121FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -374,6 +576,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		113804301EC3152E00FAFFBC /* Build configuration list for PBXNativeTarget "GutenbergSemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113804311EC3152E00FAFFBC /* Debug */,
+				113804321EC3152E00FAFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1138043E1EC315BD00FAFFBC /* Build configuration list for PBXNativeTarget "GutenbergSemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1138043F1EC315BD00FAFFBC /* Debug */,
+				113804401EC315BD00FAFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		11D7E2E41EC2F6B600121FCF /* Build configuration list for PBXProject "GutenbergSem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

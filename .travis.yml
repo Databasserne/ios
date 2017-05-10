@@ -3,3 +3,6 @@ xcode_project: GutenbergSem.xcodeproj
 xcode_scheme: GutenbergSem
 
 podfile: ./Podfile
+
+script:
+  - ./bin/tests

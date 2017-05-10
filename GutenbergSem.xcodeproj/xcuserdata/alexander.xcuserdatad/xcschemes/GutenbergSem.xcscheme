@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "113804281EC3152E00FAFFBC"
+               BuildableName = "GutenbergSemTests.xctest"
+               BlueprintName = "GutenbergSemTests"
+               ReferencedContainer = "container:GutenbergSem.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "113804361EC315BD00FAFFBC"
+               BuildableName = "GutenbergSemUITests.xctest"
+               BlueprintName = "GutenbergSemUITests"
+               ReferencedContainer = "container:GutenbergSem.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
