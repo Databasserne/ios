@@ -12,6 +12,7 @@
 		11D7E2F21EC2F6B600121FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F01EC2F6B600121FCF /* Main.storyboard */; };
 		11D7E2F41EC2F6B600121FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F31EC2F6B600121FCF /* Assets.xcassets */; };
 		11D7E2F71EC2F6B600121FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F51EC2F6B600121FCF /* LaunchScreen.storyboard */; };
+		6CADB5C9E37314D744315939 /* Pods_GutenbergSem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9B6EC22B6CF4738166EF8C /* Pods_GutenbergSem.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		11D7E2F31EC2F6B600121FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11D7E2F61EC2F6B600121FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11D7E2F81EC2F6B600121FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D9B6EC22B6CF4738166EF8C /* Pods_GutenbergSem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GutenbergSem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECE10C8C1122F21F587668B /* Pods-GutenbergSem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GutenbergSem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GutenbergSem/Pods-GutenbergSem.debug.xcconfig"; sourceTree = "<group>"; };
+		D1812046C064BCC91A2BF75D /* Pods-GutenbergSem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GutenbergSem.release.xcconfig"; path = "Pods/Target Support Files/Pods-GutenbergSem/Pods-GutenbergSem.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CADB5C9E37314D744315939 /* Pods_GutenbergSem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				11D7E2EB1EC2F6B600121FCF /* GutenbergSem */,
 				11D7E2EA1EC2F6B600121FCF /* Products */,
+				D7CC61ABE7AB2891FE9E9F91 /* Pods */,
+				A47BF6EF74C979E30882C910 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = GutenbergSem;
 			sourceTree = "<group>";
 		};
+		A47BF6EF74C979E30882C910 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D9B6EC22B6CF4738166EF8C /* Pods_GutenbergSem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7CC61ABE7AB2891FE9E9F91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ECE10C8C1122F21F587668B /* Pods-GutenbergSem.debug.xcconfig */,
+				D1812046C064BCC91A2BF75D /* Pods-GutenbergSem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11D7E2FB1EC2F6B600121FCF /* Build configuration list for PBXNativeTarget "GutenbergSem" */;
 			buildPhases = (
+				C2EC5607876B2D9EF6293998 /* [CP] Check Pods Manifest.lock */,
 				11D7E2E51EC2F6B600121FCF /* Sources */,
 				11D7E2E61EC2F6B600121FCF /* Frameworks */,
 				11D7E2E71EC2F6B600121FCF /* Resources */,
+				055A4A8D810C0F1BDD2AD614 /* [CP] Embed Pods Frameworks */,
+				477BB71678FFB9526D876CA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		055A4A8D810C0F1BDD2AD614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GutenbergSem/Pods-GutenbergSem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		477BB71678FFB9526D876CA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GutenbergSem/Pods-GutenbergSem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2EC5607876B2D9EF6293998 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11D7E2E51EC2F6B600121FCF /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		11D7E2FC1EC2F6B600121FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECE10C8C1122F21F587668B /* Pods-GutenbergSem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GutenbergSem/Info.plist;
@@ -271,6 +347,7 @@
 		};
 		11D7E2FD1EC2F6B600121FCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1812046C064BCC91A2BF75D /* Pods-GutenbergSem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GutenbergSem/Info.plist;
