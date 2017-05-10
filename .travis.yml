@@ -6,5 +6,4 @@ xcode_sdk: iphonesimulator10.0
 podfile: ./Podfile
 
 script:
-- xcodebuild clean build test -project GutenbergSem.xcodeproj -scheme GutenbergSemTests -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0'
-- xcodebuild clean build test -project GutenbergSem.xcodeproj -scheme GutenbergSemUITests -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0'
+- xcodebuild clean build test -project GutenbergSem.xcodeproj -scheme GutenbergSem -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0'
