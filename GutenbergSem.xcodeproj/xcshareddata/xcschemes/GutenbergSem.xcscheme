@@ -20,6 +20,20 @@
                ReferencedContainer = "container:GutenbergSem.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6201363BE695A91B78AFDC7BB8DA8F8B"
+               BuildableName = "Pods_GutenbergSem.framework"
+               BlueprintName = "Pods-GutenbergSem"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
