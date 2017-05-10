@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--View Controller-->
         <scene sceneID="2kE-mr-aO3">
             <objects>
                 <viewController id="v2F-fL-eG7" sceneMemberID="viewController">
@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="mVR-Mc-4wS"/>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="mVR-Mc-4wS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3R5-Zg-NSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-255" y="547"/>
         </scene>
-        <!--Map-->
+        <!--View Controller-->
         <scene sceneID="CYN-F8-CQ1">
             <objects>
                 <viewController id="Yta-IZ-6hd" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             <constraint firstItem="wht-HS-bkq" firstAttribute="top" secondItem="Ppd-3J-YE5" secondAttribute="top" id="lEx-zb-pZg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="efj-KO-hTM"/>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="efj-KO-hTM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cle-Er-pEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="-1307" y="-181"/>
         </scene>
-        <!--Search-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GutenbergSem" customModuleProvider="target" sceneMemberID="viewController">
@@ -143,7 +143,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5HT-dD-tKw" secondAttribute="bottom" id="vco-9V-Sj8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" id="Ihw-CX-1js"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Ihw-CX-1js"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="mU0-lt-2mr" id="Qwd-Yu-B3C"/>
                     </connections>
