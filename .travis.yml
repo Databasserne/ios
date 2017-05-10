@@ -1,0 +1,5 @@
+language: swift
+xcode_project: GutenbergSem.xcodeproj
+xcode_scheme: GutenbergSem
+
+podfile: ./Podfile
