@@ -14,9 +14,51 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6201363BE695A91B78AFDC7BB8DA8F8B"
+               BuildableName = "Pods_GutenbergSem.framework"
+               BlueprintName = "Pods-GutenbergSem"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "11D7E2E81EC2F6B600121FCF"
                BuildableName = "GutenbergSem.app"
                BlueprintName = "GutenbergSem"
+               ReferencedContainer = "container:GutenbergSem.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "113804281EC3152E00FAFFBC"
+               BuildableName = "GutenbergSemTests.xctest"
+               BlueprintName = "GutenbergSemTests"
+               ReferencedContainer = "container:GutenbergSem.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "113804361EC315BD00FAFFBC"
+               BuildableName = "GutenbergSemUITests.xctest"
+               BlueprintName = "GutenbergSemUITests"
                ReferencedContainer = "container:GutenbergSem.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +70,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "113804281EC3152E00FAFFBC"
-               BuildableName = "GutenbergSemTests.xctest"
-               BlueprintName = "GutenbergSemTests"
-               ReferencedContainer = "container:GutenbergSem.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "113804361EC315BD00FAFFBC"
-               BuildableName = "GutenbergSemUITests.xctest"
-               BlueprintName = "GutenbergSemUITests"
-               ReferencedContainer = "container:GutenbergSem.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
