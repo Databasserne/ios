@@ -7,28 +7,48 @@
 //
 
 import XCTest
-@testable import GutenbergSem
 
+@testable import GutenbergSem
 class GutenbergSemTests: XCTestCase {
     
     let vc: ViewController! = nil
+    var sessionUnderTest: URLSession!
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        
+        sessionUnderTest = URLSession(configuration: URLSessionConfiguration.default)
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sessionUnderTest = nil
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCallToApiCompletes() {
+
+        let url = URL(string: "https://www.cphbusiness.dk")
+
+        let promise = expectation(description: "Completion handler invoked")
+        var statusCode: Int?
+        var responseError: Error?
+        
+        let dataTask = sessionUnderTest.dataTask(with: url!) { data, response, error in
+            statusCode = (response as? HTTPURLResponse)?.statusCode
+            responseError = error
+            promise.fulfill()
+        }
+        dataTask.resume()
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssertNil(responseError)
+        XCTAssertEqual(statusCode, 200)
     }
+    
+    func testSearchCity() {
+        
+        
+    }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
