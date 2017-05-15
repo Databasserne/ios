@@ -1,8 +1,9 @@
 language: objective-c
-xcode_project: GutenbergSem.xcworkspace
-xcode_scheme: GutenbergSem
+xcode_project: GutenbergSem.xcodeproj
+xcode_scheme: GutenbergSemTests
 osx_image: xcode8.3
 xcode_sdk: iphonesimulator10.0
+
 
 script:
 - xcodebuild clean build test -project GutenbergSem.xcodeproj -scheme GutenbergSem -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3'
