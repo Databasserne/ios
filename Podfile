@@ -6,5 +6,6 @@ target 'GutenbergSem' do
   use_frameworks!
 
   # Pods for GutenbergSem
+  pod 'Alamofire'
 
 end
