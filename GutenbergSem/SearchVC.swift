@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class SearchVC: UIViewController {
+class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var segControl: UISegmentedControl!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -21,6 +21,11 @@ class SearchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        
+        downloadData {
+            self.tableView.reloadData()
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -29,31 +34,65 @@ class SearchVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+//    func downloadData(completed: @escaping DownloadComplete){
+//        Alamofire.request(URL(string: "https://www.google.dk")!).responseJSON { (response) in
+//            let result = response.result
+//            
+//            if let resDict = result.value as? Dictionary<String, Any> {
+//                if let cities = resDict["Cities"] as? [Dictionary<String, Any>] {
+//                    for city in cities {
+//                        self.cities.append(City(dict: city))
+//                    }
+//                }
+//                
+//                if let books = resDict["Books"] as? [Dictionary<String, Any>] {
+//                    for book in books {
+//                        self.books.append(Book(dict: book))
+//                    }
+//                }
+//                
+//                if let authors = resDict["Authors"] as? [Dictionary<String, Any>] {
+//                    for author in authors {
+//                        self.author.append(Author(dict: author))
+//                    }
+//                }
+//             }
+//        }
+//    }
+    
     func downloadData(completed: @escaping DownloadComplete){
-        Alamofire.request(URL(string: "https://www.google.dk")!).responseJSON { (response) in
-            let result = response.result
-            
-            if let resDict = result.value as? Dictionary<String, Any> {
-                if let cities = resDict["Cities"] as? [Dictionary<String, Any>] {
-                    for city in cities {
-                        self.cities.append(City(dict: city))
-                    }
-                }
-                
-                if let books = resDict["Books"] as? [Dictionary<String, Any>] {
-                    for book in books {
-                        self.books.append(Book(dict: book))
-                    }
-                }
-                
-                if let authors = resDict["Authors"] as? [Dictionary<String, Any>] {
-                    for author in authors {
-                        self.author.append(Author(dict: author))
-                    }
-                }
-             }
-        }
+        cities.append(City(name: "København"))
+        cities.append(City(name: "Odense"))
+        cities.append(City(name: "Århus"))
+        cities.append(City(name: "Stockholm"))
+        cities.append(City(name: "Oslo"))
+        
+        completed()
+        
+        
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cities.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let city = cities[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell")
+            as! SearchCell
+        cell.configureCell(city: city)
+        return cell
+        
+    }
+    
+    
+    
 }
 
 /*

@@ -117,13 +117,30 @@
                                 <rect key="frame" x="0.0" y="112" width="375" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8QT-84-KU8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" id="8QT-84-KU8" customClass="SearchCell" customModule="GutenbergSem" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8QT-84-KU8" id="Zd6-id-sVW">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lW1-Jg-kWT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="lW1-Jg-kWT" secondAttribute="trailing" id="OgY-aA-IpM"/>
+                                                <constraint firstItem="lW1-Jg-kWT" firstAttribute="leading" secondItem="Zd6-id-sVW" secondAttribute="leading" id="jcN-is-HGd"/>
+                                                <constraint firstItem="lW1-Jg-kWT" firstAttribute="top" secondItem="Zd6-id-sVW" secondAttribute="top" id="uvl-ng-H7d"/>
+                                                <constraint firstAttribute="bottom" secondItem="lW1-Jg-kWT" secondAttribute="bottom" id="zDD-50-F9m"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="lW1-Jg-kWT" id="uWP-XK-kvL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
