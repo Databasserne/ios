@@ -18,6 +18,7 @@
 		11D7E2F21EC2F6B600121FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F01EC2F6B600121FCF /* Main.storyboard */; };
 		11D7E2F41EC2F6B600121FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F31EC2F6B600121FCF /* Assets.xcassets */; };
 		11D7E2F71EC2F6B600121FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F51EC2F6B600121FCF /* LaunchScreen.storyboard */; };
+		AE0CF1AE1ECC79F000AC442A /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CF1AD1ECC79F000AC442A /* MapVC.swift */; };
 		AE1E9F641ECC3E7F00A2159C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E9F631ECC3E7F00A2159C /* SearchCell.swift */; };
 		AE9F8D4A1ECC32FF00838D71 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9F8D491ECC32FF00838D71 /* Book.swift */; };
 		AE9F8D4C1ECC37ED00838D71 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9F8D4B1ECC37ED00838D71 /* Author.swift */; };
@@ -59,6 +60,7 @@
 		11D7E2F81EC2F6B600121FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D9B6EC22B6CF4738166EF8C /* Pods_GutenbergSem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GutenbergSem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECE10C8C1122F21F587668B /* Pods-GutenbergSem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GutenbergSem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GutenbergSem/Pods-GutenbergSem.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0CF1AD1ECC79F000AC442A /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		AE1E9F631ECC3E7F00A2159C /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		AE9F8D491ECC32FF00838D71 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		AE9F8D4B1ECC37ED00838D71 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				11D7E2EE1EC2F6B600121FCF /* SearchVC.swift */,
+				AE0CF1AD1ECC79F000AC442A /* MapVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				11D7E2ED1EC2F6B600121FCF /* AppDelegate.swift in Sources */,
 				AE1E9F641ECC3E7F00A2159C /* SearchCell.swift in Sources */,
 				11A6112B1ECC3206000CD79D /* City.swift in Sources */,
+				AE0CF1AE1ECC79F000AC442A /* MapVC.swift in Sources */,
 				AE9F8D4A1ECC32FF00838D71 /* Book.swift in Sources */,
 				11A611251ECC2F43000CD79D /* Constants.swift in Sources */,
 			);
