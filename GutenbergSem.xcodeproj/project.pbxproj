@@ -10,6 +10,8 @@
 		113804241EC30AF300FAFFBC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113804231EC30AF300FAFFBC /* MapKit.framework */; };
 		1138042C1EC3152E00FAFFBC /* GutenbergSemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138042B1EC3152E00FAFFBC /* GutenbergSemTests.swift */; };
 		1138043A1EC315BD00FAFFBC /* GutenbergSemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113804391EC315BD00FAFFBC /* GutenbergSemUITests.swift */; };
+		11A611251ECC2F43000CD79D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A611241ECC2F43000CD79D /* Constants.swift */; };
+		11A6112B1ECC3206000CD79D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6112A1ECC3206000CD79D /* City.swift */; };
 		11B8185D1EC30AA700A09F07 /* Pods_GutenbergSem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9B6EC22B6CF4738166EF8C /* Pods_GutenbergSem.framework */; };
 		11D7E2ED1EC2F6B600121FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7E2EC1EC2F6B600121FCF /* AppDelegate.swift */; };
 		11D7E2EF1EC2F6B600121FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7E2EE1EC2F6B600121FCF /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 		113804371EC315BD00FAFFBC /* GutenbergSemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GutenbergSemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113804391EC315BD00FAFFBC /* GutenbergSemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutenbergSemUITests.swift; sourceTree = "<group>"; };
 		1138043B1EC315BD00FAFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A611241ECC2F43000CD79D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		11A6112A1ECC3206000CD79D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		11D7E2E91EC2F6B600121FCF /* GutenbergSem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GutenbergSem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D7E2EC1EC2F6B600121FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D7E2EE1EC2F6B600121FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,37 @@
 			path = GutenbergSemUITests;
 			sourceTree = "<group>";
 		};
+		11A611261ECC31E6000CD79D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11D7E2EE1EC2F6B600121FCF /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		11A611271ECC31EC000CD79D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				11A611241ECC2F43000CD79D /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		11A611281ECC31F1000CD79D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11A6112A1ECC3206000CD79D /* City.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		11A611291ECC31F6000CD79D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		11D7E2E01EC2F6B600121FCF = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +160,11 @@
 		11D7E2EB1EC2F6B600121FCF /* GutenbergSem */ = {
 			isa = PBXGroup;
 			children = (
+				11A611291ECC31F6000CD79D /* Views */,
+				11A611281ECC31F1000CD79D /* Models */,
+				11A611271ECC31EC000CD79D /* Utils */,
+				11A611261ECC31E6000CD79D /* Controllers */,
 				11D7E2EC1EC2F6B600121FCF /* AppDelegate.swift */,
-				11D7E2EE1EC2F6B600121FCF /* ViewController.swift */,
 				11D7E2F01EC2F6B600121FCF /* Main.storyboard */,
 				11D7E2F31EC2F6B600121FCF /* Assets.xcassets */,
 				11D7E2F51EC2F6B600121FCF /* LaunchScreen.storyboard */,
@@ -362,6 +400,8 @@
 			files = (
 				11D7E2EF1EC2F6B600121FCF /* ViewController.swift in Sources */,
 				11D7E2ED1EC2F6B600121FCF /* AppDelegate.swift in Sources */,
+				11A6112B1ECC3206000CD79D /* City.swift in Sources */,
+				11A611251ECC2F43000CD79D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +623,7 @@
 				113804321EC3152E00FAFFBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1138043E1EC315BD00FAFFBC /* Build configuration list for PBXNativeTarget "GutenbergSemUITests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +632,7 @@
 				113804401EC315BD00FAFFBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11D7E2E41EC2F6B600121FCF /* Build configuration list for PBXProject "GutenbergSem" */ = {
 			isa = XCConfigurationList;

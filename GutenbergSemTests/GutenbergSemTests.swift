@@ -28,6 +28,8 @@ class GutenbergSemTests: XCTestCase {
 
         let url = URL(string: "https://www.cphbusiness.dk")
 
+        
+        
         let promise = expectation(description: "Completion handler invoked")
         var statusCode: Int?
         var responseError: Error?
