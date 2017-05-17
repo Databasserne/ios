@@ -12,6 +12,7 @@ import Alamofire
 class ViewController: UIViewController {
 
     var cities = [City]()
+    var books = [Book]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,14 @@ class ViewController: UIViewController {
                         self.cities.append(City(dict: city))
                     }
                 }
-            }
+                
+                if let books = resDict["Books"] as? [Dictionary<String, Any>] {
+                    for book in books {
+                        self.books.append(Book(dict: book))
+                    }
+                }
+                
+             }
         }
     }
 }
@@ -45,7 +53,20 @@ class ViewController: UIViewController {
         {"Name": "Københaven", "GeoLat": 0.0, "GeoLng": 0.0},
         {"Name": "Odense", "GeoLat": 0.0, "GeoLng": 0.0},
         {"Name": "Århus", "GeoLat": 0.0, "GeoLng": 0.0}
-    ]
+    ],
+ 
+ 
+    "Book" : [
+        {"Name": "Harry Potter 1", "Author": "J. K. Rowling"}
+        {"Name": "Harry Potter 2", "Author": "J. K. Rowling"}
+        {"Name": "Harry Potter 3", "Author": "J. K. Rowling"}
+    ],
+ 
+    ""
+ 
+ 
+ 
+ 
  }
  
  
