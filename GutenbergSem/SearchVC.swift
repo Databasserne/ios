@@ -9,8 +9,12 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class SearchVC: UIViewController {
 
+    @IBOutlet weak var segControl: UISegmentedControl!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+    
     var cities = [City]()
     var books = [Book]()
     var author = [Author]()
