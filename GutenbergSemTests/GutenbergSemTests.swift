@@ -11,7 +11,7 @@ import XCTest
 @testable import GutenbergSem
 class GutenbergSemTests: XCTestCase {
     
-    let vc: ViewController! = nil
+    let vc: SearchVC! = nil
     var sessionUnderTest: URLSession!
     
     override func setUp() {
