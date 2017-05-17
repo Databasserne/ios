@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     var cities = [City]()
     var books = [Book]()
+    var author = [Author]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,11 @@ class ViewController: UIViewController {
                     }
                 }
                 
+                if let authors = resDict["Authors"] as? [Dictionary<String, Any>] {
+                    for author in authors {
+                        self.author.append(Author(dict: author))
+                    }
+                }
              }
         }
     }

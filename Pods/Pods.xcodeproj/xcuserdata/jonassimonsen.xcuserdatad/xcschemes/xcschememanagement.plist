@@ -3,15 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GutenbergSem.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>3CC0DBE1491FC6414DCB02D4B1F2D78C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6201363BE695A91B78AFDC7BB8DA8F8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

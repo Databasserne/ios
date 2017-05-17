@@ -1,5 +1,5 @@
 //
-//  Book.swift
+//  Author.swift
 //  GutenbergSem
 //
 //  Created by Jonas Simonsen on 17/05/2017.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-class Book {
+class Author {
     private var name: String!
     
     init(dict: Dictionary<String, Any>) {
-        if let bookName = dict["Name"] as? String {
-            name = bookName
+        if let authorName = dict["Name"] as? String {
+            name = authorName
         }
     }
 }

@@ -19,6 +19,7 @@
 		11D7E2F41EC2F6B600121FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F31EC2F6B600121FCF /* Assets.xcassets */; };
 		11D7E2F71EC2F6B600121FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D7E2F51EC2F6B600121FCF /* LaunchScreen.storyboard */; };
 		AE9F8D4A1ECC32FF00838D71 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9F8D491ECC32FF00838D71 /* Book.swift */; };
+		AE9F8D4C1ECC37ED00838D71 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9F8D4B1ECC37ED00838D71 /* Author.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		4D9B6EC22B6CF4738166EF8C /* Pods_GutenbergSem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GutenbergSem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECE10C8C1122F21F587668B /* Pods-GutenbergSem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GutenbergSem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GutenbergSem/Pods-GutenbergSem.debug.xcconfig"; sourceTree = "<group>"; };
 		AE9F8D491ECC32FF00838D71 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		AE9F8D4B1ECC37ED00838D71 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		D1812046C064BCC91A2BF75D /* Pods-GutenbergSem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GutenbergSem.release.xcconfig"; path = "Pods/Target Support Files/Pods-GutenbergSem/Pods-GutenbergSem.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 			children = (
 				11A6112A1ECC3206000CD79D /* City.swift */,
 				AE9F8D491ECC32FF00838D71 /* Book.swift */,
+				AE9F8D4B1ECC37ED00838D71 /* Author.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9F8D4C1ECC37ED00838D71 /* Author.swift in Sources */,
 				11D7E2EF1EC2F6B600121FCF /* ViewController.swift in Sources */,
 				11D7E2ED1EC2F6B600121FCF /* AppDelegate.swift in Sources */,
 				11A6112B1ECC3206000CD79D /* City.swift in Sources */,
