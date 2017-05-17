@@ -11,7 +11,6 @@ import Foundation
 class City {
     private var name: String!
     
-    
     var Name: String {
         return name
     }

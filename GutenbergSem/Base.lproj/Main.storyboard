@@ -100,6 +100,9 @@
                                             <segment title="Book"/>
                                             <segment title="Geolocation"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="segChangedValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="vcW-yg-baZ"/>
+                                        </connections>
                                     </segmentedControl>
                                     <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="jDn-40-iii">
                                         <rect key="frame" x="0.0" y="32" width="375" height="44"/>

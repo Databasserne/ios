@@ -67,8 +67,15 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cities.append(City(name: "Århus"))
         cities.append(City(name: "Stockholm"))
         cities.append(City(name: "Oslo"))
+        books.append(Book(name: "Harry Potter"))
+        books.append(Book(name: "Kaptajn Nemo"))
+        books.append(Book(name: "Flaskehalsen"))
+        books.append(Book(name: "MacBook"))
+        
+        
         
         completed()
+        
         
         
     }
@@ -79,21 +86,44 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cities.count
+        switch segControl.selectedSegmentIndex {
+        case 0:
+            return cities.count
+        case 1:
+            return books.count
+        case 2:
+            return author.count
+        default:
+            return 0
+        }
+            
+        }
         
-    }
-    
+        
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let city = cities[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell")
-            as! SearchCell
-        cell.configureCell(city: city)
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as! SearchCell
+        switch segControl.selectedSegmentIndex {
+        case 0:
+            cell.configureCell(city: cities[indexPath.row])
+            break
+        case 1:
+            cell.configureCell(book: books[indexPath.row])
+            break
+        case 2:
+            cell.configureCell(author: author[indexPath.row])
+            break
+        default: break
+            
+        }
         
+        return cell
+            
     }
     
-    
-    
+    @IBAction func segChangedValue(_ sender: Any) {
+        
+        tableView.reloadData()
+    }
 }
 
 /*
@@ -112,10 +142,9 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         {"Name": "Harry Potter 3", "Author": "J. K. Rowling"}
     ],
  
-    ""
- 
- 
- 
+    "Aither" : [
+        {"Name": "J. K. Rowling, "Books": "Harry Potter 1"}
+    ]
  
  }
  
