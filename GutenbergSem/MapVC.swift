@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapVC: UIViewController {
+class MapVC: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -17,10 +17,13 @@ class MapVC: UIViewController {
         
         super.viewDidLoad()
         
+        mapView.delegate = self
+        
         let locations = [
             ["title": "New York, NY",    "latitude": 40.713054, "longitude": -74.007228],
             ["title": "Los Angeles, CA", "latitude": 34.052238, "longitude": -118.243344],
-            ["title": "Chicago, IL",     "latitude": 41.883229, "longitude": -87.632398]
+            ["title": "Chicago, IL",     "latitude": 41.883229, "longitude": -87.632398],
+            ["title": "København", "latitude": 55.684932, "longitude": 12.556713]
         ]
         
         for location in locations {

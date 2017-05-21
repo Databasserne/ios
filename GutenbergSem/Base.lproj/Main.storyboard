@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-255" y="547"/>
         </scene>
-        <!--View Controller-->
+        <!--MapVC-->
         <scene sceneID="CYN-F8-CQ1">
             <objects>
-                <viewController id="Yta-IZ-6hd" sceneMemberID="viewController">
+                <viewController id="Yta-IZ-6hd" customClass="MapVC" customModule="GutenbergSem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t3h-sa-9da"/>
                         <viewControllerLayoutGuide type="bottom" id="73i-Jl-6Ie"/>
@@ -53,6 +53,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="efj-KO-hTM"/>
+                    <connections>
+                        <outlet property="mapView" destination="wht-HS-bkq" id="5r2-De-cn9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cle-Er-pEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
