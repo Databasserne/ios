@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3R5-Zg-NSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="547"/>
+            <point key="canvasLocation" x="-439" y="229"/>
         </scene>
         <!--MapVC-->
         <scene sceneID="CYN-F8-CQ1">
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cle-Er-pEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="-181"/>
+            <point key="canvasLocation" x="289" y="-493"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xQP-qZ-TKb">
@@ -72,7 +72,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="FVG-Ao-gF2"/>
-                        <segue destination="Yta-IZ-6hd" kind="relationship" relationship="viewControllers" id="VCk-1S-uXk"/>
                         <segue destination="v2F-fL-eG7" kind="relationship" relationship="viewControllers" id="90a-DT-y5L"/>
                     </connections>
                 </tabBarController>
@@ -93,10 +92,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nwz-qB-7xR">
-                                <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="104"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyA-6L-Ohn">
+                                        <rect key="frame" x="139" y="0.0" width="97" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A9l-06-Cej">
-                                        <rect key="frame" x="8" y="0.0" width="359" height="29"/>
+                                        <rect key="frame" x="8" y="28" width="359" height="29"/>
                                         <segments>
                                             <segment title="City"/>
                                             <segment title="Auther"/>
@@ -108,7 +113,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="jDn-40-iii">
-                                        <rect key="frame" x="0.0" y="32" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="44"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                 </subviews>
@@ -120,7 +125,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5HT-dD-tKw">
-                                <rect key="frame" x="0.0" y="112" width="375" height="506"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="478"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" id="8QT-84-KU8" customClass="SearchCell" customModule="GutenbergSem" customModuleProvider="target">
@@ -130,16 +135,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lW1-Jg-kWT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lW1-Jg-kWT">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="43.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="lW1-Jg-kWT" secondAttribute="trailing" id="OgY-aA-IpM"/>
-                                                <constraint firstItem="lW1-Jg-kWT" firstAttribute="leading" secondItem="Zd6-id-sVW" secondAttribute="leading" id="jcN-is-HGd"/>
+                                                <constraint firstAttribute="trailing" secondItem="lW1-Jg-kWT" secondAttribute="trailing" constant="8" id="OgY-aA-IpM"/>
+                                                <constraint firstItem="lW1-Jg-kWT" firstAttribute="leading" secondItem="Zd6-id-sVW" secondAttribute="leading" constant="8" id="jcN-is-HGd"/>
                                                 <constraint firstItem="lW1-Jg-kWT" firstAttribute="top" secondItem="Zd6-id-sVW" secondAttribute="top" id="uvl-ng-H7d"/>
                                                 <constraint firstAttribute="bottom" secondItem="lW1-Jg-kWT" secondAttribute="bottom" id="zDD-50-F9m"/>
                                             </constraints>
@@ -168,6 +173,7 @@
                         <outlet property="searchDisplayController" destination="mU0-lt-2mr" id="Qwd-Yu-B3C"/>
                         <outlet property="segControl" destination="A9l-06-Cej" id="6gb-9Z-paQ"/>
                         <outlet property="tableView" destination="5HT-dD-tKw" id="6QV-vt-otU"/>
+                        <segue destination="Yta-IZ-6hd" kind="show" identifier="MapVC" id="Za4-KU-4yz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -180,7 +186,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-255" y="-887"/>
+            <point key="canvasLocation" x="-439" y="-493"/>
         </scene>
     </scenes>
 </document>

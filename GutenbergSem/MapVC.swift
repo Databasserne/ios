@@ -13,31 +13,27 @@ class MapVC: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
+    var cities: [City]!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         mapView.delegate = self
         
-        let locations = [
-            ["title": "New York, NY",    "latitude": 40.713054, "longitude": -74.007228],
-            ["title": "Los Angeles, CA", "latitude": 34.052238, "longitude": -118.243344],
-            ["title": "Chicago, IL",     "latitude": 41.883229, "longitude": -87.632398],
-            ["title": "København", "latitude": 55.684932, "longitude": 12.556713]
-        ]
+//        let locations = [
+//            ["title": "New York, NY",    "latitude": 40.713054, "longitude": -74.007228],
+//            ["title": "Los Angeles, CA", "latitude": 34.052238, "longitude": -118.243344],
+//            ["title": "Chicago, IL",     "latitude": 41.883229, "longitude": -87.632398],
+//            ["title": "København", "latitude": 55.684932, "longitude": 12.556713]
+//        ]
         
-        for location in locations {
+        for city in cities {
             let annotation = MKPointAnnotation()
-            annotation.title = location["title"] as? String
-            annotation.coordinate = CLLocationCoordinate2D(latitude: location["latitude"] as! Double, longitude: location["longitude"] as! Double)
+            annotation.title = city.Name
+            annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(city.Lat), longitude: CLLocationDegrees(city.Lng))
             mapView.addAnnotation(annotation)
         }
-    }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 

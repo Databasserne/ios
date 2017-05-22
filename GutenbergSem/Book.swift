@@ -10,9 +10,14 @@ import Foundation
 
 class Book {
     private var name: String!
+    private var auth: Author!
     
     var Name: String {
         return name
+    }
+    
+    var Auth: Author {
+        return auth
     }
     
     init(name: String) {
@@ -20,8 +25,11 @@ class Book {
     }
     
     init(dict: Dictionary<String, Any>) {
-        if let bookName = dict["Name"] as? String {
+        if let bookName = dict["name"] as? String {
             name = bookName
+        }
+        if let authorDict = dict["author"] as? Dictionary<String, String> {
+            auth = Author(dict: authorDict)
         }
     }
 }

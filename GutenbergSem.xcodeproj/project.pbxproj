@@ -10,6 +10,7 @@
 		113804241EC30AF300FAFFBC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113804231EC30AF300FAFFBC /* MapKit.framework */; };
 		1138042C1EC3152E00FAFFBC /* GutenbergSemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138042B1EC3152E00FAFFBC /* GutenbergSemTests.swift */; };
 		1138043A1EC315BD00FAFFBC /* GutenbergSemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113804391EC315BD00FAFFBC /* GutenbergSemUITests.swift */; };
+		118326751ED2E3B7006C468F /* Urlbuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118326741ED2E3B7006C468F /* Urlbuilder.swift */; };
 		11A611251ECC2F43000CD79D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A611241ECC2F43000CD79D /* Constants.swift */; };
 		11A6112B1ECC3206000CD79D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6112A1ECC3206000CD79D /* City.swift */; };
 		11B8185D1EC30AA700A09F07 /* Pods_GutenbergSem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9B6EC22B6CF4738166EF8C /* Pods_GutenbergSem.framework */; };
@@ -49,6 +50,7 @@
 		113804371EC315BD00FAFFBC /* GutenbergSemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GutenbergSemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113804391EC315BD00FAFFBC /* GutenbergSemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutenbergSemUITests.swift; sourceTree = "<group>"; };
 		1138043B1EC315BD00FAFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118326741ED2E3B7006C468F /* Urlbuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Urlbuilder.swift; sourceTree = "<group>"; };
 		11A611241ECC2F43000CD79D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11A6112A1ECC3206000CD79D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		11D7E2E91EC2F6B600121FCF /* GutenbergSem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GutenbergSem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				11A611241ECC2F43000CD79D /* Constants.swift */,
+				118326741ED2E3B7006C468F /* Urlbuilder.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9F8D4C1ECC37ED00838D71 /* Author.swift in Sources */,
+				118326751ED2E3B7006C468F /* Urlbuilder.swift in Sources */,
 				11D7E2EF1EC2F6B600121FCF /* SearchVC.swift in Sources */,
 				11D7E2ED1EC2F6B600121FCF /* AppDelegate.swift in Sources */,
 				AE1E9F641ECC3E7F00A2159C /* SearchCell.swift in Sources */,

@@ -19,9 +19,9 @@ class Author {
         self.name = name
     }
     
-    init(dict: Dictionary<String, Any>) {
-        if let authorName = dict["Name"] as? String {
-            name = authorName
+    init(dict: Dictionary<String, String>) {
+        if let authName = dict["name"] {
+            self.name = authName
         }
     }
 }
