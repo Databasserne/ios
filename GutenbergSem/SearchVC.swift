@@ -33,6 +33,11 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
                 completed()
             }
             break
+        case 1:
+            searchByAuthor {
+                completed()
+            }
+            break
         case 2:
             searchByBook {
                 self.performSegue(withIdentifier: "MapVC", sender: nil)
@@ -50,6 +55,19 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
                 for dict in list {
                     self.books.append(Book(dict: dict))
                 }
+            }
+            completed()
+        }
+    }
+    
+    func searchByAuthor(completed: @escaping DownloadComplete){
+        Alamofire.request(Urlbuilder.searchByAuthorMySqlUrl(author: searchBar.text!)).responseJSON { (response) in
+            let result = response.result
+            
+            if let list = result.value as? [Dictionary<String, Any>] {
+                for dict in list {
+                    self.books.append(Book(dict: dict))
+                } 
             }
             completed()
         }
@@ -104,9 +122,9 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         case 0:
             return cities.count
         case 1:
-            return books.count
-        case 2:
             return author.count
+        case 2:
+            return books.count
         default:
             return 0
         }

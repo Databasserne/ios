@@ -16,12 +16,11 @@ class SearchCell: UITableViewCell {
         nameLbl.text = city.Name
     }
     
-    func configureCell (book: Book) {
-        nameLbl.text = book.Name
-    }
-    
-    
     func configureCell (author: Author) {
         nameLbl.text = author.Name
+    }
+    
+    func configureCell (book: Book) {
+        nameLbl.text = book.Name
     }
 }
