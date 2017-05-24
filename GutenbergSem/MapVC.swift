@@ -37,6 +37,9 @@ class MapVC: UIViewController, MKMapViewDelegate {
     }
     
     @IBAction func closePressed(_ sender: Any) {
+        cities = [City]()
+        mapView.removeAnnotations(mapView.annotations)
+        
         dismiss(animated: false, completion: nil)
     }
 }
