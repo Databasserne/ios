@@ -59,4 +59,41 @@ class GutenbergSemTests: XCTestCase {
         }
     }
     
+    func testSearchCityUrl(){
+        let city = "Florence"
+        let expected = "\(Urlbuilder.BASE_URL)/mysql/city/\(city)"
+        
+        let url = Urlbuilder.searchByCityUrl(city: city)
+        
+        XCTAssertEqual(expected, url.absoluteString)
+    }
+    
+    func testSearchAuthorUrl(){
+        let author = "William"
+        let expected = "\(Urlbuilder.BASE_URL)/mysql/author/\(author)"
+        
+        let url = Urlbuilder.searchByAuthorUrl(author: author)
+        
+        XCTAssertEqual(expected, url.absoluteString)
+    }
+    
+    func testSearchBookUrl(){
+        let book = "stuff"
+        let expected = "\(Urlbuilder.BASE_URL)/mysql/book/\(book)"
+        
+        let url = Urlbuilder.searchByBookUrl(book: book)
+        
+        XCTAssertEqual(expected, url.absoluteString)
+    }
+    
+    func testSearchGeolocationUrl(){
+        let lat = "40.023"
+        let lng = "-23.400"
+        let expected = "\(Urlbuilder.BASE_URL)/mysql/location/\(lat)/\(lng)"
+        
+        let url = Urlbuilder.searchByGeolocation(lat: lat, lng: lng)
+        
+        XCTAssertEqual(expected, url.absoluteString)
+    }
+    
 }

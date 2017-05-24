@@ -28,6 +28,8 @@ class MapVC: UIViewController, MKMapViewDelegate {
 //            ["title": "København", "latitude": 55.684932, "longitude": 12.556713]
 //        ]
         
+        mapView.removeAnnotations(mapView.annotations)
+        
         for city in cities {
             let annotation = MKPointAnnotation()
             annotation.title = city.Name
@@ -37,10 +39,7 @@ class MapVC: UIViewController, MKMapViewDelegate {
     }
     
     @IBAction func closePressed(_ sender: Any) {
-        cities = [City]()
-        mapView.removeAnnotations(mapView.annotations)
-        
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
 

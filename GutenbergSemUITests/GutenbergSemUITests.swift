@@ -8,6 +8,7 @@
 
 import XCTest
 
+@testable import GutenbergSem
 class GutenbergSemUITests: XCTestCase {
         
     override func setUp() {
@@ -28,9 +29,81 @@ class GutenbergSemUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAuther() {
+        let app = XCUIApplication()
+        app.buttons["Auther"].tap()
+        
+        let searchSearchField = app.searchFields["Search"]
+        searchSearchField.tap()
+        searchSearchField.typeText("Shakespeare, William")
+        app.buttons["Søg"].tap()
+        
+        sleep(5)
+        
+        let cells = XCUIApplication().tables.cells
+        XCTAssertGreaterThan(cells.count, 0)
+    }
+    
+    func testBooks() {
+        let app = XCUIApplication()
+        app.buttons["Book"].tap()
+        let searchSearchField = app.searchFields["Search"]
+        
+        searchSearchField.tap()
+        searchSearchField.typeText("La Fiammetta")
+        app.buttons["Søg"].tap()
+        
+        app.buttons["Close"].tap()
+    }
+    
+    func testCity() {
+        let app = XCUIApplication()
+        app.buttons["City"].tap()
+        
+        let searchSearchField = app.searchFields["Search"]
+        searchSearchField.tap()
+        searchSearchField.typeText("Florence")
+        app.buttons["Søg"].tap()
+        
+        sleep(5)
+        
+        let cells = XCUIApplication().tables.cells
+        XCTAssertGreaterThan(cells.count, 0)
+    }
+    
+    func testGeolocation() {
+        let app = XCUIApplication()
+        app.buttons["Geolocation"].tap()
+        
+        let searchSearchField = app.searchFields["Search"]
+        searchSearchField.tap()
+        searchSearchField.typeText("37/-122")
+        app.buttons["Søg"].tap()
+        
+        sleep(5)
+        
+        let cells = XCUIApplication().tables.cells
+        XCTAssertGreaterThan(cells.count, 0)
+    }
+    
+    func testNeo4jAuther() {
+        let app = XCUIApplication()
+        let tabBarsQuery = app.tabBars
+        tabBarsQuery.buttons["Bookmarks"].tap()
+        app.switches["0"].tap()
+        tabBarsQuery.buttons["Search"].tap()
+        
+        app.buttons["Auther"].tap()
+
+        let searchSearchField = app.searchFields["Search"]
+        searchSearchField.tap()
+        searchSearchField.typeText("Shakespeare, William")
+        app.buttons["Søg"].tap()
+        
+        sleep(5)
+        
+        let cells = XCUIApplication().tables.cells
+        XCTAssertGreaterThan(cells.count, 0)
     }
     
 }
