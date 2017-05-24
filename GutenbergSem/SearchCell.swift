@@ -11,16 +11,10 @@ import UIKit
 class SearchCell: UITableViewCell {
 
     @IBOutlet weak var nameLbl: UILabel!
-    
-    func configureCell (city: City) {
-        nameLbl.text = city.Name
-    }
-    
-    func configureCell (author: Author) {
-        nameLbl.text = author.Name
-    }
+    @IBOutlet weak var authorLbl :UILabel!
     
     func configureCell (book: Book) {
         nameLbl.text = book.Name
+        authorLbl.text = book.Auth.Name
     }
 }

@@ -10,3 +10,5 @@ import Foundation
 
 
 typealias DownloadComplete = () -> ()
+
+var DatabaseToUse: DatabaseTypes = .MySql

@@ -35,5 +35,9 @@ class MapVC: UIViewController, MKMapViewDelegate {
             mapView.addAnnotation(annotation)
         }
     }
+    
+    @IBAction func closePressed(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
 }
 

@@ -39,8 +39,12 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             }
             break
         case 2:
-            searchByBook {
+            searchByBook(book: searchBar.text!, completed: {
                 self.performSegue(withIdentifier: "MapVC", sender: nil)
+            })
+        case 3:
+            searchByGeolocation {
+                completed()
             }
         default:
             break
@@ -48,7 +52,7 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     }
     
     func searchByCity(completed: @escaping DownloadComplete){
-        Alamofire.request(Urlbuilder.searchByCityMySqlUrl(city: searchBar.text!)).responseJSON { (response) in
+        Alamofire.request(Urlbuilder.searchByCityUrl(city: searchBar.text!)).responseJSON { (response) in
             let result = response.result
             
             if let list = result.value as? [Dictionary<String, Any>] {
@@ -61,20 +65,30 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     }
     
     func searchByAuthor(completed: @escaping DownloadComplete){
-        Alamofire.request(Urlbuilder.searchByAuthorMySqlUrl(author: searchBar.text!)).responseJSON { (response) in
+        Alamofire.request(Urlbuilder.searchByAuthorUrl(author: searchBar.text!)).responseJSON { (response) in
             let result = response.result
             
             if let list = result.value as? [Dictionary<String, Any>] {
                 for dict in list {
-                    self.books.append(Book(dict: dict))
-                } 
+                    let b = Book(dict: dict)
+                    var c = false
+                    for bk in self.books {
+                        c = bk.Name == b.Name
+                        if c {
+                            break;
+                        }
+                    }
+                    if !c {
+                        self.books.append(Book(dict: dict))
+                    }
+                }
             }
             completed()
         }
     }
     
-    func searchByBook(completed: @escaping DownloadComplete){
-        Alamofire.request(Urlbuilder.searchByBookMySqlUrl(book: searchBar.text!)).responseJSON { (response) in
+    func searchByBook(book: String, completed: @escaping DownloadComplete){
+        Alamofire.request(Urlbuilder.searchByBookUrl(book: book)).responseJSON { (response) in
             let result = response.result
             
             if let list = result.value as? [Dictionary<String, Any>] {
@@ -84,31 +98,28 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             }
             completed()
         }
-
     }
     
-//
-//    func downloadData(completed: @escaping DownloadComplete){
-//        
-//        
-//        
-//        cities.append(City(name: "København"))
-//        cities.append(City(name: "Odense"))
-//        cities.append(City(name: "Århus"))
-//        cities.append(City(name: "Stockholm"))
-//        cities.append(City(name: "Oslo"))
-//        books.append(Book(name: "Harry Potter"))
-//        books.append(Book(name: "Kaptajn Nemo"))
-//        books.append(Book(name: "Flaskehalsen"))
-//        books.append(Book(name: "MacBook"))
-//        
-//        
-//        
-//        completed()
-//        
-//        
-//        
-//    }
+    func searchByGeolocation(completed: @escaping DownloadComplete){
+        let geoloc = searchBar.text?.components(separatedBy: "/")
+        Alamofire.request(Urlbuilder.searchByGeolocation(lat: (geoloc?[0])!, lng: (geoloc?[1])!)).responseJSON { (response) in
+            let result = response.result
+            
+            if let list = result.value as? [Dictionary<String, String>] {
+                for dict in list {
+                    self.books.append(Book(dict: dict))
+                }
+            }
+            
+            completed()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchByBook(book: books[indexPath.row].Name, completed: { 
+            self.performSegue(withIdentifier: "MapVC", sender: nil)
+        })
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -117,18 +128,6 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return books.count
-        
-        switch segControl.selectedSegmentIndex {
-        case 0:
-            return cities.count
-        case 1:
-            return author.count
-        case 2:
-            return books.count
-        default:
-            return 0
-        }
-            
     }
         
         

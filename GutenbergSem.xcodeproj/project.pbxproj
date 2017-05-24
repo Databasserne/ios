@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11330FD31ED5671A000C6C72 /* DatabaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11330FD21ED5671A000C6C72 /* DatabaseTypes.swift */; };
+		11330FD51ED5750A000C6C72 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11330FD41ED5750A000C6C72 /* SettingsVC.swift */; };
 		113804241EC30AF300FAFFBC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113804231EC30AF300FAFFBC /* MapKit.framework */; };
 		1138042C1EC3152E00FAFFBC /* GutenbergSemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138042B1EC3152E00FAFFBC /* GutenbergSemTests.swift */; };
 		1138043A1EC315BD00FAFFBC /* GutenbergSemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113804391EC315BD00FAFFBC /* GutenbergSemUITests.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11330FD21ED5671A000C6C72 /* DatabaseTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseTypes.swift; sourceTree = "<group>"; };
+		11330FD41ED5750A000C6C72 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		113804231EC30AF300FAFFBC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		113804291EC3152E00FAFFBC /* GutenbergSemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GutenbergSemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1138042B1EC3152E00FAFFBC /* GutenbergSemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutenbergSemTests.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			children = (
 				11D7E2EE1EC2F6B600121FCF /* SearchVC.swift */,
 				AE0CF1AD1ECC79F000AC442A /* MapVC.swift */,
+				11330FD41ED5750A000C6C72 /* SettingsVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				11A6112A1ECC3206000CD79D /* City.swift */,
 				AE9F8D491ECC32FF00838D71 /* Book.swift */,
 				AE9F8D4B1ECC37ED00838D71 /* Author.swift */,
+				11330FD21ED5671A000C6C72 /* DatabaseTypes.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -413,12 +419,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11330FD51ED5750A000C6C72 /* SettingsVC.swift in Sources */,
 				AE9F8D4C1ECC37ED00838D71 /* Author.swift in Sources */,
 				118326751ED2E3B7006C468F /* Urlbuilder.swift in Sources */,
 				11D7E2EF1EC2F6B600121FCF /* SearchVC.swift in Sources */,
 				11D7E2ED1EC2F6B600121FCF /* AppDelegate.swift in Sources */,
 				AE1E9F641ECC3E7F00A2159C /* SearchCell.swift in Sources */,
 				11A6112B1ECC3206000CD79D /* City.swift in Sources */,
+				11330FD31ED5671A000C6C72 /* DatabaseTypes.swift in Sources */,
 				AE0CF1AE1ECC79F000AC442A /* MapVC.swift in Sources */,
 				AE9F8D4A1ECC32FF00838D71 /* Book.swift in Sources */,
 				11A611251ECC2F43000CD79D /* Constants.swift in Sources */,

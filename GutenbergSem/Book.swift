@@ -17,6 +17,9 @@ class Book {
     }
     
     var Auth: Author {
+        if auth == nil {
+            auth = Author(name: "")
+        }
         return auth
     }
     
